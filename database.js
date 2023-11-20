@@ -150,8 +150,8 @@ const example = async (...Parameters) => {
   Details = Parameters[2];
   switch (Parameters[1]) {
     case "Read":
-     
-        Sql = `select * from ${Parameters[0]} where season= '${Details}'`;
+    
+        Sql = `select * from ${Parameters[0]} where id= ${Details}`;
         Message = `${Details} Retrived`
       
       break;
